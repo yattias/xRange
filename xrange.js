@@ -1,7 +1,4 @@
-// Thank you, @sorinmuchi
-// https://github.com/sorinmuchi/super-simple-highlighter/blob/master/js%2Fcontent_script%2Fxpath.js
 var xRange = {
-
     // Thank you, Mozilla
     // https://developer.mozilla.org/en-US/docs/Using_XPath
     getNodeFromXPath: function(aExpr) {
@@ -74,7 +71,7 @@ var xRange = {
      * @param {object} range Range object
      * @return {object} (identifies containers by their _xpath)
      */
-    createXPathRangeFromRange: function (range) {
+    getXRangeFromRange: function (range) {
         "use strict";
         return {
             startContainerPath: this.getXPathFromNode(range.startContainer),
@@ -90,7 +87,7 @@ var xRange = {
      * @param xpathRange see {@link #createXPathRangeFromRange}
      * @return {Range} range object, or null if start or end containers couldn't be evaluated
      */
-    createRangeFromXPathRange: function (xpathRange) {
+    getRangeFromXRange: function (xpathRange) {
         "use strict";
         var startContainer, endContainer, endOffset, evaluator = new XPathEvaluator();
 
