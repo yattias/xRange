@@ -1,0 +1,24 @@
+{
+  "name": "xrange",
+  "main": "xrange.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yattias/xRange",
+  "authors": [
+    "Kobe Attias <kobeattias@gmail.com>"
+  ],
+  "description": "xpath range utility for the DOM",
+  "keywords": [
+    "xpath",
+    "range",
+    "dom",
+    "xrange"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
